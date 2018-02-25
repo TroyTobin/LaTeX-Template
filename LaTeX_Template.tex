@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+%% Useful placeholders
+\newcommand{\docTitle}{LaTeX Template}
+\newcommand{\docCompany}{Company Name}
+
+%% Setup the header and footer
+\pagestyle{fancy}
+\chead{\docTitle}
+\lhead{}
+\rhead{}
+\cfoot{}
+\lfoot{\docCompany}
+\rfoot{\thepage\ of \pageref{LastPage}}
+
+\begin{document}
+
+%% Title Page
+\thispagestyle{empty}
+\begin{center}
+    \centering
+    \includegraphics[width=0.5\linewidth]{Logo.pdf}
+
+    \vspace{1cm}
+    {\uppercase{\Large \docTitle}}
+
+    \vspace{3cm}
+    \vspace{3cm}
+    {\Large Author Name}
+    
+    \vspace{0.5cm}
+    {\docCompany}
+
+    \vspace{2cm}
+    {\today}
+\end{center}
+\clearpage
+
+%% Core Document
+\section{Introduction}
+Introduction Contents
+
+\section{Section One}\label{Section One}
+\subsection{Sub Section One}\label{Sub Section One}
+\subsection{Sub Section Two}\label{Sub Section Two}
+\section{Section Two}\label{Section Two}
+\subsection{Sub Section Three}\label{Sub Section Three}
+\section{Section Three}\label{Section Three}
+\begin{itemize}
+  \item First point
+  \item Second point
+\end{itemize}
+
+\end{document}
